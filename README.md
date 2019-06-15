@@ -1,10 +1,8 @@
 # dnSpy
 
-dnSpy is a debugger and .NET assembly editor. You can use it to edit and debug assemblies even if you don't have any source code available.
-
-Want to say thanks? Click the star at the top of the page. Or fork dnSpy and send a PR!
-
-The following pictures show dnSpy in action. It shows dnSpy editing and debugging a .NET EXE file, not source code.
+dnSpy是一个调试器和. net汇编编辑器。即使没有可用的源代码，也可以使用它来编辑和调试程序集。
+想说谢谢吗?点击页面顶部的星星。或者叉dnSpy和发送PR!
+以下图片显示dnSpy正在行动。它显示了dnSpy编辑和调试. net EXE文件，而不是源代码。
 
 ![debug-animated](images/debug-animated.gif)
 
@@ -12,14 +10,13 @@ The following pictures show dnSpy in action. It shows dnSpy editing and debuggin
 
 # Features (see below for more detail)
 
-- Debug .NET Framework, .NET Core and Unity game assemblies, no source code required
-- Edit assemblies in C# or Visual Basic or IL, and edit all metadata
-- Light and dark themes
-- Extensible, write your own extension
-- High DPI support (per-monitor DPI aware)
-- And much more, see below
-
-dnSpy uses the ILSpy decompiler engine and the Roslyn (C# / Visual Basic) compiler and many other open source libraries, see below for more info.
+调试。net框架，。net核心和Unity游戏程序集，不需要源代码
+-编辑c#或Visual Basic或IL中的程序集，并编辑所有元数据
+-明暗主题
+-可扩展，编写自己的扩展
+-高DPI支持(支持每个监视器的DPI)
+-更多，见下文
+dnSpy使用ILSpy反编译引擎和Roslyn (c# / Visual Basic)编译器以及许多其他开源库，更多信息请参见下面。
 
 # Binaries
 
@@ -31,22 +28,24 @@ Or build it from source, see the [Wiki](https://github.com/0xd4d/dnSpy/wiki/Buil
 
 # Debugger
 
-- Debug .NET Framework, .NET Core and Unity game assemblies, no source code required
-- Set breakpoints and step into any assembly
-- Locals, watch, autos windows
-- Variables windows supports saving variables (eg. decrypted byte arrays) to disk or view them in the hex editor (memory window)
-- Object IDs
-- Multiple processes can be debugged at the same time
-- Break on module load
-- Tracepoints and conditional breakpoints
-- Export/import breakpoints and tracepoints
-- Call stack, threads, modules, processes windows
-- Break on thrown exceptions (1st chance)
-- Variables windows support evaluating C# / Visual Basic expressions
-- Dynamic modules can be debugged (but not dynamic methods due to CLR limitations)
-- Output window logs various debugging events, and it shows timestamps by default :)
-- Assemblies that decrypt themselves at runtime can be debugged, dnSpy will use the in-memory image. You can also force dnSpy to always use in-memory images instead of disk files.
-- Public API, you can write an extension or use the C# Interactive window to control the debugger
+调试。net框架，。net核心和Unity游戏程序集，不需要源代码
+-设置断点并进入任何程序集
+-本地，手表，汽车窗口
+windows支持保存变量。
+解密字节数组)到磁盘或在十六进制编辑器(内存窗口)中查看它们
+- - - - - -对象id
+-可以同时调试多个进程
+-模块加载时断开
+-跟踪点和条件断点
+-导出/导入断点和跟踪点
+调用堆栈，线程，模块，进程窗口
+-抛出异常时中断(第一次机会)
+-变量windows支持计算c# / Visual Basic表达式
+-可以调试动态模块(但由于CLR的限制，不能调试动态方法)
+- Output窗口记录各种调试事件，默认情况下显示时间戳:)
+-程序集解密自己在运行时可以调试，dnSpy将使用内存中的映像。
+您还可以强制dnSpy始终使用内存映像而不是磁盘文件。
+-公共API，你可以写一个扩展或使用c#交互窗口来控制调试器
 
 # Assembly Editor
 
@@ -58,28 +57,26 @@ Or build it from source, see the [Wiki](https://github.com/0xd4d/dnSpy/wiki/Buil
 
 # Hex Editor
 
-- Click on an address in the decompiled code to go to its IL code in the hex editor
-- Reverse of above, press F12 in an IL body in the hex editor to go to the decompiled code or other high level representation of the bits. It's great to find out which statement a patch modified.
-- Highlights .NET metadata structures and PE structures
-- Tooltips shows more info about the selected .NET metadata / PE field
-- Go to position, file, RVA
-- Go to .NET metadata token, method body, #Blob / #Strings / #US heap offset or #GUID heap index
-- Follow references (Ctrl+F12)
+-所有元数据都可以编辑
+-编辑方法和类在c#或Visual Basic与智能感知，不需要源代码
+-在c#或Visual Basic中添加新方法、类或成员
+- IL编辑器，用于低水平的IL方法体编辑
+-可编辑低层元数据表。这在内部使用十六进制编辑器。
 
 # Other
 
-- BAML decompiler
-- Blue, light and dark themes (and a dark high contrast theme)
-- Bookmarks
-- C# Interactive window can be used to script dnSpy
-- Search assemblies for classes, methods, strings etc
-- Analyze class and method usage, find callers etc
-- Multiple tabs and tab groups
-- References are highlighted, use Tab / Shift+Tab to move to next reference
-- Go to entry point and module initializer commands
-- Go to metadata token or metadata row commands
-- Code tooltips (C# and Visual Basic)
-- Export to project
+——BAML解码器
+-蓝色、浅色和深色主题(以及深色高对比度主题)
+——书签
+c#交互式窗口可以用来编写dnSpy脚本
+-搜索程序集的类，方法，字符串等
+-分析类和方法的使用情况，寻找调用者等
+-多个标签和标签组
+-引用被突出显示，使用Tab / Shift+Tab移动到下一个引用
+-进入进入点和模块初始化命令
+-转到元数据令牌或元数据行命令
+-代码工具提示(c#和Visual Basic)
+-出口至项目
 
 # List of other open source libraries used by dnSpy
 
